@@ -6,6 +6,7 @@ const morgan = require('morgan');
 const { DataSource } = require('typeorm')
 
 const app = express();
+
 const myDataSource = new DataSource({
   type: process.env.DB_TYPE,
   host: process.env.DB_HOST,
